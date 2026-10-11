@@ -3,8 +3,10 @@
     <!-- Remote GitHub -->
     <remote name="sky-remote" fetch="https://github.com" />
 
-    <!-- 1. Permanent Fix: Cuttlefish Removal -->
+    <!-- 1. Permanent Fix: Remove Unused Google Virtual Emulators -->
     <remove-project name="device/google/cuttlefish" />
+    <remove-project name="device/google/cuttlefish_vmm" />
+    <remove-project name="device/google/trout" />
 
     <!-- 2. Device Tree (Android 17) -->
     <project name="Yadu72485/device_xiaomi_sky-" 
