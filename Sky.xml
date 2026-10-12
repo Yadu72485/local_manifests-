@@ -36,16 +36,23 @@
              remote="sky-remote" 
              revision="17" />
 
-    <!-- 6. Xiaomi Hardware Tree -->
+    <!-- 6. Xiaomi Hardware Tree (Lineage 24.0 Base) -->
     <project name="Yadu72485/android_hardware_xiaomi" 
              path="hardware/xiaomi" 
              remote="sky-remote" 
-             revision="lineage-23.2" />
+             revision="lineage-24.0" />
 
-    <!-- 7. Permanent Fix: Lineage Compat without duplicate Protobuf -->
+    <!-- 7. Permanent Fix: Lineage Compat (Lineage 24.0 Base) -->
     <remove-project name="LineageOS/android_hardware_lineage_compat" />
     <project name="Yadu72485/android_hardware_lineage_compat"
-        path="hardware/lineage/compat"
-        remote="sky-remote"
-        revision="lineage-23.2" />
+             path="hardware/lineage/compat"
+             remote="sky-remote"
+             revision="lineage-24.0" />
+
+    <!-- 8. Permanent Fix: ContactsProvider (Lineage 24.0 Base) -->
+    <remove-project name="LineageOS/android_packages_providers_ContactsProvider" />
+    <project name="Yadu72485/android_packages_providers_ContactsProvider"
+             path="packages/providers/ContactsProvider"
+             remote="sky-remote"
+             revision="lineage-24.0" />
 </manifest>
