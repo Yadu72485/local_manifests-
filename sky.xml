@@ -61,11 +61,4 @@
              path="packages/providers/ContactsProvider"
              remote="sky-remote"
              revision="lineage-24.0" />
-
-    <!-- 10. Permanent Fix: Build Make apkcerts check bypass (Lineage 24.0 Base) -->
-    <remove-project name="LineageOS/android_build" />
-    <project name="Yadu72485/android_build"
-             path="build/make"
-             remote="sky-remote"
-             revision="lineage-24.0" />
 </manifest>
